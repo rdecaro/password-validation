@@ -34,4 +34,4 @@ Foram criados objetos de request e response para isolar o que é utilizado nessa
 
 ### Domain
 As regras de validação de senha estão separadas em classes, implementando uma interface, para facilitar a manutenção e promover um código limpo, respeitando os princípios do SOLID.
-Para as validações mais simples, foi utilizado expressão regular.
+Foi utilizado expressão regular para as validações mais simples.
