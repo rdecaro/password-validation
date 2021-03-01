@@ -38,4 +38,4 @@ Foi utilizado expressão regular para as validações mais simples.
 
 ## Soluções Estudadas
 
-Foi considerado a solução de executar toda a lista de regras utilizando stream mapeando quais não foram atendidas para, posteriormente, retornar/logar de uma única vez quais validações falharam. Como esse requisito não foi solicitado, adotei um while para finalizar a execução no momento em que uma regra não for atendida, diminuindo o processamento do serviço.
+Foi considerado a solução de executar toda a lista de regras utilizando stream mapeando quais não foram atendidas para, posteriormente, retornar/logar de uma única vez quais validações falharam. Como esse requisito não foi solicitado, adotei um while para finalizar a execução no momento em que uma regra não for sucedida, diminuindo o processamento do serviço.
