@@ -35,3 +35,7 @@ Foram criados objetos de request e response para isolar o que é utilizado nessa
 ### Domain
 As regras de validação de senha estão separadas em classes, implementando uma interface, para facilitar a manutenção e promover um código limpo, respeitando os princípios do SOLID.
 Foi utilizado expressão regular para as validações mais simples.
+
+## Soluções Estudadas
+
+Foi considerado a solução de executar toda a lista de regras utilizando stream mapeando quais não foram atendidas para, posteriormente, retornar/logar de uma única vez quais validações falharam. Como esse requisito não foi solicitado, adotei um while para finalizar a execução no momento em que uma regra não for atendida, diminuindo o processamento do serviço.
