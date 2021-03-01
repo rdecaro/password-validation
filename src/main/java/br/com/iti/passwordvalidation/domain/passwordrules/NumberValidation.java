@@ -2,7 +2,7 @@ package br.com.iti.passwordvalidation.domain.passwordrules;
 
 import java.util.regex.Pattern;
 
-public class NumberValidation implements PasswordRules {
+public class NumberValidation implements ValidationRule {
 	
 	private String value;
 	private final Pattern rule = Pattern.compile("^(?=.*\\d).+$");

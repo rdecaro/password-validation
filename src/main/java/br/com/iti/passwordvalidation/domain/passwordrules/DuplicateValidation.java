@@ -3,7 +3,7 @@ package br.com.iti.passwordvalidation.domain.passwordrules;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DuplicateValidation implements PasswordRules {
+public class DuplicateValidation implements ValidationRule {
 	
 	private String value;
 	

@@ -2,7 +2,7 @@ package br.com.iti.passwordvalidation.domain.passwordrules;
 
 import java.util.regex.Pattern;
 
-public class WhiteSpaceValidation implements PasswordRules {
+public class WhiteSpaceValidation implements ValidationRule {
 	
 	private String value;
 	private final Pattern rule = Pattern.compile("\\s");

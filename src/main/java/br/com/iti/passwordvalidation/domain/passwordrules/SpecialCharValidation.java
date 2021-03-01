@@ -2,12 +2,12 @@ package br.com.iti.passwordvalidation.domain.passwordrules;
 
 import java.util.regex.Pattern;
 
-public class SpecialValidation implements PasswordRules {
+public class SpecialCharValidation implements ValidationRule {
 	
 	private String value;
 	private final Pattern rule = Pattern.compile("^(?=.*[!@#$%^&*()+-]).+$");
 	
-	public SpecialValidation(String value) {
+	public SpecialCharValidation(String value) {
 		this.value = value;
 	}
 	

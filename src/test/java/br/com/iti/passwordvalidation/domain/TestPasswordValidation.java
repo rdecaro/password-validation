@@ -9,14 +9,14 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
-import br.com.iti.passwordvalidation.domain.passwordrules.PasswordRules;
+import br.com.iti.passwordvalidation.domain.passwordrules.ValidationRule;
 
 public class TestPasswordValidation {
 	
 	@Mock
-	private PasswordRules genericRule;
+	private ValidationRule genericRule;
 	
-	private ArrayList<PasswordRules> rulesListMock;
+	private ArrayList<ValidationRule> rulesListMock;
 	private int index;
 	private Password password;
 	
@@ -24,7 +24,7 @@ public class TestPasswordValidation {
 	public void before() {
 		MockitoAnnotations.openMocks(this);
 
-		rulesListMock = new ArrayList<PasswordRules>();
+		rulesListMock = new ArrayList<ValidationRule>();
 		rulesListMock.add(genericRule);
 		
 		index = 0;

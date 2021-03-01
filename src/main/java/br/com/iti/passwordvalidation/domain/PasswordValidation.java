@@ -1,14 +1,17 @@
 package br.com.iti.passwordvalidation.domain;
 
-import java.util.ArrayList;
+import java.util.List;
 
-import br.com.iti.passwordvalidation.domain.passwordrules.PasswordRules;
+import org.springframework.stereotype.Service;
 
+import br.com.iti.passwordvalidation.domain.passwordrules.ValidationRule;
+
+@Service
 public class PasswordValidation {
 
 	public void passwordValidation(Password password) {
 		
-		ArrayList<PasswordRules> rules = RulesBuilder.buildRulesList(password.getValue());			
+		List<ValidationRule> rules = RulesBuilder.buildRulesList(password.getValue());			
 		int index = 0;
 		
 		while(rules.size()>index && password.isValid()) {

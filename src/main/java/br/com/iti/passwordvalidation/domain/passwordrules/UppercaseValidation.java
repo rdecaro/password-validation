@@ -2,7 +2,7 @@ package br.com.iti.passwordvalidation.domain.passwordrules;
 
 import java.util.regex.Pattern;
 
-public class UppercaseValidation implements PasswordRules {
+public class UppercaseValidation implements ValidationRule {
 	
 	private String value;
 	private final Pattern rule = Pattern.compile("^(?=.*[A-Z]).+$");
