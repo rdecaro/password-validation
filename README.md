@@ -30,7 +30,7 @@ A rota implementada é um POST no path /password.
 ```
 ## Detalhes da Solução
 ### Controller
-Foram criados objetos de request e response para isolar o que é utilizado nessa camada do domínio da aplicação. Todos os parses estão em classes separadas para evitar dependências.
+Foram criados objetos de request e response para isolar o que é utilizado nessa camada do domínio da aplicação. Todos os parses estão em classes separadas para evitar dependências. Os parses são executados no controller para evitar que a camada de domínio da aplicação tenha conhecimento de outros objetos que não fazem parte puramente do negócio.
 
 ### Domain
 As regras de validação de senha estão separadas em classes, implementando uma interface, para facilitar a manutenção e promover um código limpo, respeitando os princípios do SOLID.
